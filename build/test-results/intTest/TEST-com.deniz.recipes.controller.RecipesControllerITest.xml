@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.deniz.recipes.controller.RecipesControllerITest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-06-25T22:32:58" hostname="Denizs-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="initializationError" classname="com.deniz.recipes.controller.RecipesControllerITest" time="0.001">
+    <failure message="org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.springframework.test.web.servlet.MockMvc mockMvc] in constructor [public com.deniz.recipes.controller.RecipesControllerITest(org.springframework.test.web.servlet.MockMvc,com.deniz.recipes.repo.RecipeRepository,com.deniz.recipes.repo.ProductRepository,com.deniz.recipes.repo.RecipeIngredientRepository)]: Failed to load ApplicationContext for [WebMergedContextConfiguration@2b3b1124 testClass = com.deniz.recipes.controller.RecipesControllerITest, locations = [], classes = [com.deniz.recipes.BuyRecipesApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@4e70a728, [ImportsContextCustomizer@54286339 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@45905bff, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@66b7550d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@77a98a6a, org.springframework.boot.test.context.SpringBootTestAnnotation@5aacfc71], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]" type="org.junit.jupiter.api.extension.ParameterResolutionException">org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.springframework.test.web.servlet.MockMvc mockMvc] in constructor [public com.deniz.recipes.controller.RecipesControllerITest(org.springframework.test.web.servlet.MockMvc,com.deniz.recipes.repo.RecipeRepository,com.deniz.recipes.repo.ProductRepository,com.deniz.recipes.repo.RecipeIngredientRepository)]: Failed to load ApplicationContext for [WebMergedContextConfiguration@2b3b1124 testClass = com.deniz.recipes.controller.RecipesControllerITest, locations = [], classes = [com.deniz.recipes.BuyRecipesApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@4e70a728, [ImportsContextCustomizer@54286339 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@45905bff, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@66b7550d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@77a98a6a, org.springframework.boot.test.context.SpringBootTestAnnotation@5aacfc71], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at java.base@23.0.2/java.util.Optional.orElseGet(Optional.java:364)
+	at java.base@23.0.2/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@2b3b1124 testClass = com.deniz.recipes.controller.RecipesControllerITest, locations = [], classes = [com.deniz.recipes.BuyRecipesApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@4e70a728, [ImportsContextCustomizer@54286339 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@45905bff, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@66b7550d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@77a98a6a, org.springframework.boot.test.context.SpringBootTestAnnotation@5aacfc71], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.getApplicationContext(SpringExtension.java:355)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.resolveParameter(SpringExtension.java:341)
+	... 2 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V2__insert_data.sql failed
+------------------------------------
+SQL State  : 42001
+Error Code : 42001
+Message    : Syntax error in SQL statement &quot;-- Insert products and capture IDs\000aWITH inserted_products AS (\000a[*]INSERT INTO products (name, price_in_cents) VALUES\000a    ('Tomato', 150),\000a    ('Pasta', 300),\000a    ('Olive Oil', 500),\000a    ('Garlic', 100),\000a    ('Basil', 120),\000a    ('Chicken Breast', 700),\000a    ('Lettuce', 200),\000a    ('Parmesan', 400)\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipes and capture IDs\000a    inserted_recipes AS (\000aINSERT INTO recipes (name) VALUES\000a    ('Spaghetti Pomodoro'),\000a    ('Chicken Caesar Salad')\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipe_ingredients using the returned IDs\000a    insert_recipe_ingredients AS (\000aINSERT INTO recipe_ingredients (recipe_id, product_id)\000aSELECT\000a    r.id AS recipe_id,\000a    p.id AS product_id\000aFROM\000a    inserted_recipes r\000a    JOIN inserted_products p\000aON\000a    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))\000a    OR\000a    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))\000a    )\000a\000a-- Insert carts with different total_in_cents values\000aINSERT INTO carts (total_in_cents) VALUES\000a    (0),\000a    (1070),\000a    (2150)&quot;; expected &quot;WITH, (, SELECT, TABLE, VALUES&quot;; SQL statement:
+-- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150) [42001-224]
+Location   : db/migration/V2__insert_data.sql (/Users/denizkilic/IdeaProjects/buy-recipes-app/build/resources/main/db/migration/V2__insert_data.sql)
+Line       : 2
+Statement  : -- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150)
+
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at app//org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at app//org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at app//org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at app//org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at app//org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at app//org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at app//org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at app//org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at app//org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at app//org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at app//org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at app//org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at app//org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at app//org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454)
+	at app//org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at app//org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at app//org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 5 more
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V2__insert_data.sql failed
+------------------------------------
+SQL State  : 42001
+Error Code : 42001
+Message    : Syntax error in SQL statement &quot;-- Insert products and capture IDs\000aWITH inserted_products AS (\000a[*]INSERT INTO products (name, price_in_cents) VALUES\000a    ('Tomato', 150),\000a    ('Pasta', 300),\000a    ('Olive Oil', 500),\000a    ('Garlic', 100),\000a    ('Basil', 120),\000a    ('Chicken Breast', 700),\000a    ('Lettuce', 200),\000a    ('Parmesan', 400)\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipes and capture IDs\000a    inserted_recipes AS (\000aINSERT INTO recipes (name) VALUES\000a    ('Spaghetti Pomodoro'),\000a    ('Chicken Caesar Salad')\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipe_ingredients using the returned IDs\000a    insert_recipe_ingredients AS (\000aINSERT INTO recipe_ingredients (recipe_id, product_id)\000aSELECT\000a    r.id AS recipe_id,\000a    p.id AS product_id\000aFROM\000a    inserted_recipes r\000a    JOIN inserted_products p\000aON\000a    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))\000a    OR\000a    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))\000a    )\000a\000a-- Insert carts with different total_in_cents values\000aINSERT INTO carts (total_in_cents) VALUES\000a    (0),\000a    (1070),\000a    (2150)&quot;; expected &quot;WITH, (, SELECT, TABLE, VALUES&quot;; SQL statement:
+-- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150) [42001-224]
+Location   : db/migration/V2__insert_data.sql (/Users/denizkilic/IdeaProjects/buy-recipes-app/build/resources/main/db/migration/V2__insert_data.sql)
+Line       : 2
+Statement  : -- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150)
+
+	at app//org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:382)
+	at app//org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:272)
+	at app//org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+	at app//org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:271)
+	at app//org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:244)
+	at app//org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:139)
+	at app//org.flywaydb.core.internal.jdbc.TableLockingExecutionTemplate$1.call(TableLockingExecutionTemplate.java:36)
+	at app//org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+	at app//org.flywaydb.core.internal.jdbc.TableLockingExecutionTemplate.execute(TableLockingExecutionTemplate.java:31)
+	at app//org.flywaydb.core.internal.database.base.Connection.lock(Connection.java:102)
+	at app//org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:144)
+	at app//org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:139)
+	at app//org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:97)
+	at app//org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:188)
+	at app//org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213)
+	at app//org.flywaydb.core.Flyway.migrate(Flyway.java:140)
+	at app//org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at app//org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 28 more
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V2__insert_data.sql failed
+------------------------------------
+SQL State  : 42001
+Error Code : 42001
+Message    : Syntax error in SQL statement &quot;-- Insert products and capture IDs\000aWITH inserted_products AS (\000a[*]INSERT INTO products (name, price_in_cents) VALUES\000a    ('Tomato', 150),\000a    ('Pasta', 300),\000a    ('Olive Oil', 500),\000a    ('Garlic', 100),\000a    ('Basil', 120),\000a    ('Chicken Breast', 700),\000a    ('Lettuce', 200),\000a    ('Parmesan', 400)\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipes and capture IDs\000a    inserted_recipes AS (\000aINSERT INTO recipes (name) VALUES\000a    ('Spaghetti Pomodoro'),\000a    ('Chicken Caesar Salad')\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipe_ingredients using the returned IDs\000a    insert_recipe_ingredients AS (\000aINSERT INTO recipe_ingredients (recipe_id, product_id)\000aSELECT\000a    r.id AS recipe_id,\000a    p.id AS product_id\000aFROM\000a    inserted_recipes r\000a    JOIN inserted_products p\000aON\000a    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))\000a    OR\000a    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))\000a    )\000a\000a-- Insert carts with different total_in_cents values\000aINSERT INTO carts (total_in_cents) VALUES\000a    (0),\000a    (1070),\000a    (2150)&quot;; expected &quot;WITH, (, SELECT, TABLE, VALUES&quot;; SQL statement:
+-- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150) [42001-224]
+Location   : db/migration/V2__insert_data.sql (/Users/denizkilic/IdeaProjects/buy-recipes-app/build/resources/main/db/migration/V2__insert_data.sql)
+Line       : 2
+Statement  : -- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150)
+
+	at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:267)
+	at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222)
+	at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at app//org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68)
+	at app//org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57)
+	at app//org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at app//org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56)
+	at app//org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:374)
+	... 46 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement &quot;-- Insert products and capture IDs\000aWITH inserted_products AS (\000a[*]INSERT INTO products (name, price_in_cents) VALUES\000a    ('Tomato', 150),\000a    ('Pasta', 300),\000a    ('Olive Oil', 500),\000a    ('Garlic', 100),\000a    ('Basil', 120),\000a    ('Chicken Breast', 700),\000a    ('Lettuce', 200),\000a    ('Parmesan', 400)\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipes and capture IDs\000a    inserted_recipes AS (\000aINSERT INTO recipes (name) VALUES\000a    ('Spaghetti Pomodoro'),\000a    ('Chicken Caesar Salad')\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipe_ingredients using the returned IDs\000a    insert_recipe_ingredients AS (\000aINSERT INTO recipe_ingredients (recipe_id, product_id)\000aSELECT\000a    r.id AS recipe_id,\000a    p.id AS product_id\000aFROM\000a    inserted_recipes r\000a    JOIN inserted_products p\000aON\000a    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))\000a    OR\000a    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))\000a    )\000a\000a-- Insert carts with different total_in_cents values\000aINSERT INTO carts (total_in_cents) VALUES\000a    (0),\000a    (1070),\000a    (2150)&quot;; expected &quot;WITH, (, SELECT, TABLE, VALUES&quot;; SQL statement:
+-- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150) [42001-224]
+	at app//org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at app//org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at app//org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at app//org.h2.command.ParserBase.getSyntaxError(ParserBase.java:750)
+	at app//org.h2.command.ParserBase.read(ParserBase.java:357)
+	at app//org.h2.command.Parser.parseQueryPrimary(Parser.java:2712)
+	at app//org.h2.command.Parser.parseQueryTerm(Parser.java:2564)
+	at app//org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543)
+	at app//org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536)
+	at app//org.h2.command.Parser.parseQueryExpression(Parser.java:2529)
+	at app//org.h2.command.Parser.parseQuery(Parser.java:2498)
+	at app//org.h2.command.Parser.parseSingleCommonTableExpression(Parser.java:7066)
+	at app//org.h2.command.Parser.parseWith1(Parser.java:6954)
+	at app//org.h2.command.Parser.parseWith(Parser.java:6939)
+	at app//org.h2.command.Parser.parseWithStatementOrQuery(Parser.java:2507)
+	at app//org.h2.command.Parser.parsePrepared(Parser.java:631)
+	at app//org.h2.command.Parser.parse(Parser.java:592)
+	at app//org.h2.command.Parser.parse(Parser.java:569)
+	at app//org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at app//org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at app//org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at app//org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at app//org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at app//org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at app//com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at app//com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at app//org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201)
+	at app//org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95)
+	at app//org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210)
+	... 52 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[00:32:57.432 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.deniz.recipes.controller.RecipesControllerITest]: RecipesControllerITest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:32:57.475 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.deniz.recipes.BuyRecipesApplication for test class com.deniz.recipes.controller.RecipesControllerITest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+?[32m :: Spring Boot :: ?[39m              ?[2m (v3.2.5)?[0;39m
+
+?[2m2025-06-26T00:32:57.593+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mc.d.r.controller.RecipesControllerITest ?[0;39m ?[2m:?[0;39m Starting RecipesControllerITest using Java 23.0.2 with PID 75863 (started by denizkilic in /Users/denizkilic/IdeaProjects/buy-recipes-app)
+?[2m2025-06-26T00:32:57.593+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mc.d.r.controller.RecipesControllerITest ?[0;39m ?[2m:?[0;39m No active profile set, falling back to 1 default profile: "default"
+?[2m2025-06-26T00:32:57.941+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+?[2m2025-06-26T00:32:57.961+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+?[2m2025-06-26T00:32:58.158+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Starting...
+?[2m2025-06-26T00:32:58.220+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mcom.zaxxer.hikari.pool.HikariPool       ?[0;39m ?[2m:?[0;39m HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+?[2m2025-06-26T00:32:58.220+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Start completed.
+?[2m2025-06-26T00:32:58.247+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.c.internal.license.VersionPrinter   ?[0;39m ?[2m:?[0;39m Flyway Community Edition 9.22.2 by Redgate
+?[2m2025-06-26T00:32:58.247+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.c.internal.license.VersionPrinter   ?[0;39m ?[2m:?[0;39m See release notes here: https://rd.gt/416ObMi
+?[2m2025-06-26T00:32:58.247+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.c.internal.license.VersionPrinter   ?[0;39m ?[2m:?[0;39m 
+?[2m2025-06-26T00:32:58.261+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36morg.flywaydb.core.FlywayExecutor        ?[0;39m ?[2m:?[0;39m Database: jdbc:h2:mem:testdb (H2 2.2)
+?[2m2025-06-26T00:32:58.262+02:00?[0;39m ?[33m WARN?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.c.internal.database.base.Database   ?[0;39m ?[2m:?[0;39m Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+?[2m2025-06-26T00:32:58.269+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.c.i.s.JdbcTableSchemaHistory        ?[0;39m ?[2m:?[0;39m Schema history table "public"."flyway_schema_history" does not exist yet
+?[2m2025-06-26T00:32:58.270+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.core.internal.command.DbValidate    ?[0;39m ?[2m:?[0;39m Successfully validated 2 migrations (execution time 00:00.003s)
+?[2m2025-06-26T00:32:58.272+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.c.i.s.JdbcTableSchemaHistory        ?[0;39m ?[2m:?[0;39m Creating Schema History table "public"."flyway_schema_history" ...
+?[2m2025-06-26T00:32:58.281+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.core.internal.command.DbMigrate     ?[0;39m ?[2m:?[0;39m Current version of schema "public": << Empty Schema >>
+?[2m2025-06-26T00:32:58.283+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.core.internal.command.DbMigrate     ?[0;39m ?[2m:?[0;39m Migrating schema "public" to version "1 - init schema"
+?[2m2025-06-26T00:32:58.292+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.core.internal.command.DbMigrate     ?[0;39m ?[2m:?[0;39m Migrating schema "public" to version "2 - insert data"
+?[2m2025-06-26T00:32:58.295+02:00?[0;39m ?[31mERROR?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.f.core.internal.command.DbMigrate     ?[0;39m ?[2m:?[0;39m Migration of schema "public" to version "2 - insert data" failed! Please restore backups and roll back database and code!
+?[2m2025-06-26T00:32:58.296+02:00?[0;39m ?[33m WARN?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.w.c.s.GenericWebApplicationContext  ?[0;39m ?[2m:?[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V2__insert_data.sql failed
+------------------------------------
+SQL State  : 42001
+Error Code : 42001
+Message    : Syntax error in SQL statement "-- Insert products and capture IDs\000aWITH inserted_products AS (\000a[*]INSERT INTO products (name, price_in_cents) VALUES\000a    ('Tomato', 150),\000a    ('Pasta', 300),\000a    ('Olive Oil', 500),\000a    ('Garlic', 100),\000a    ('Basil', 120),\000a    ('Chicken Breast', 700),\000a    ('Lettuce', 200),\000a    ('Parmesan', 400)\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipes and capture IDs\000a    inserted_recipes AS (\000aINSERT INTO recipes (name) VALUES\000a    ('Spaghetti Pomodoro'),\000a    ('Chicken Caesar Salad')\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipe_ingredients using the returned IDs\000a    insert_recipe_ingredients AS (\000aINSERT INTO recipe_ingredients (recipe_id, product_id)\000aSELECT\000a    r.id AS recipe_id,\000a    p.id AS product_id\000aFROM\000a    inserted_recipes r\000a    JOIN inserted_products p\000aON\000a    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))\000a    OR\000a    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))\000a    )\000a\000a-- Insert carts with different total_in_cents values\000aINSERT INTO carts (total_in_cents) VALUES\000a    (0),\000a    (1070),\000a    (2150)"; expected "WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+-- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150) [42001-224]
+Location   : db/migration/V2__insert_data.sql (/Users/denizkilic/IdeaProjects/buy-recipes-app/build/resources/main/db/migration/V2__insert_data.sql)
+Line       : 2
+Statement  : -- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150)
+
+?[2m2025-06-26T00:32:58.297+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Shutdown initiated...
+?[2m2025-06-26T00:32:58.305+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Shutdown completed.
+?[2m2025-06-26T00:32:58.312+02:00?[0;39m ?[32m INFO?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36m.s.b.a.l.ConditionEvaluationReportLogger?[0;39m ?[2m:?[0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+?[2m2025-06-26T00:32:58.318+02:00?[0;39m ?[31mERROR?[0;39m ?[35m75863?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[2m?[0;39m?[36mo.s.boot.SpringApplication              ?[0;39m ?[2m:?[0;39m Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Migration V2__insert_data.sql failed
+------------------------------------
+SQL State  : 42001
+Error Code : 42001
+Message    : Syntax error in SQL statement "-- Insert products and capture IDs\000aWITH inserted_products AS (\000a[*]INSERT INTO products (name, price_in_cents) VALUES\000a    ('Tomato', 150),\000a    ('Pasta', 300),\000a    ('Olive Oil', 500),\000a    ('Garlic', 100),\000a    ('Basil', 120),\000a    ('Chicken Breast', 700),\000a    ('Lettuce', 200),\000a    ('Parmesan', 400)\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipes and capture IDs\000a    inserted_recipes AS (\000aINSERT INTO recipes (name) VALUES\000a    ('Spaghetti Pomodoro'),\000a    ('Chicken Caesar Salad')\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipe_ingredients using the returned IDs\000a    insert_recipe_ingredients AS (\000aINSERT INTO recipe_ingredients (recipe_id, product_id)\000aSELECT\000a    r.id AS recipe_id,\000a    p.id AS product_id\000aFROM\000a    inserted_recipes r\000a    JOIN inserted_products p\000aON\000a    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))\000a    OR\000a    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))\000a    )\000a\000a-- Insert carts with different total_in_cents values\000aINSERT INTO carts (total_in_cents) VALUES\000a    (0),\000a    (1070),\000a    (2150)"; expected "WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+-- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150) [42001-224]
+Location   : db/migration/V2__insert_data.sql (/Users/denizkilic/IdeaProjects/buy-recipes-app/build/resources/main/db/migration/V2__insert_data.sql)
+Line       : 2
+Statement  : -- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.5.jar:3.2.5]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.getApplicationContext(SpringExtension.java:355) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.resolveParameter(SpringExtension.java:341) ~[spring-test-6.1.6.jar:6.1.6]
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameter(ParameterResolutionUtils.java:136) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameters(ParameterResolutionUtils.java:103) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:59) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestClassConstructor(ClassBasedTestDescriptor.java:364) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateTestClass(ClassBasedTestDescriptor.java:311) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateTestClass(ClassTestDescriptor.java:79) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:287) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$before$2(ClassBasedTestDescriptor.java:204) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:203) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:85) ~[junit-jupiter-engine-5.10.2.jar:5.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.10.2.jar:1.10.2]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:124) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:99) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:94) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) ~[na:na]
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) ~[na:na]
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) ~[na:na]
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92) ~[na:na]
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103) ~[na:na]
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63) ~[na:na]
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121) ~[na:na]
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) ~[na:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) ~[gradle-worker.jar:na]
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) ~[gradle-worker.jar:na]
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V2__insert_data.sql failed
+------------------------------------
+SQL State  : 42001
+Error Code : 42001
+Message    : Syntax error in SQL statement "-- Insert products and capture IDs\000aWITH inserted_products AS (\000a[*]INSERT INTO products (name, price_in_cents) VALUES\000a    ('Tomato', 150),\000a    ('Pasta', 300),\000a    ('Olive Oil', 500),\000a    ('Garlic', 100),\000a    ('Basil', 120),\000a    ('Chicken Breast', 700),\000a    ('Lettuce', 200),\000a    ('Parmesan', 400)\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipes and capture IDs\000a    inserted_recipes AS (\000aINSERT INTO recipes (name) VALUES\000a    ('Spaghetti Pomodoro'),\000a    ('Chicken Caesar Salad')\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipe_ingredients using the returned IDs\000a    insert_recipe_ingredients AS (\000aINSERT INTO recipe_ingredients (recipe_id, product_id)\000aSELECT\000a    r.id AS recipe_id,\000a    p.id AS product_id\000aFROM\000a    inserted_recipes r\000a    JOIN inserted_products p\000aON\000a    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))\000a    OR\000a    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))\000a    )\000a\000a-- Insert carts with different total_in_cents values\000aINSERT INTO carts (total_in_cents) VALUES\000a    (0),\000a    (1070),\000a    (2150)"; expected "WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+-- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150) [42001-224]
+Location   : db/migration/V2__insert_data.sql (/Users/denizkilic/IdeaProjects/buy-recipes-app/build/resources/main/db/migration/V2__insert_data.sql)
+Line       : 2
+Statement  : -- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150)
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:382) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:272) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:271) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:244) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:139) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.jdbc.TableLockingExecutionTemplate$1.call(TableLockingExecutionTemplate.java:36) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.jdbc.TableLockingExecutionTemplate.execute(TableLockingExecutionTemplate.java:31) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.database.base.Connection.lock(Connection.java:102) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:144) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:139) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:97) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:188) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:140) ~[flyway-core-9.22.2.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.2.5.jar:3.2.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 91 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V2__insert_data.sql failed
+------------------------------------
+SQL State  : 42001
+Error Code : 42001
+Message    : Syntax error in SQL statement "-- Insert products and capture IDs\000aWITH inserted_products AS (\000a[*]INSERT INTO products (name, price_in_cents) VALUES\000a    ('Tomato', 150),\000a    ('Pasta', 300),\000a    ('Olive Oil', 500),\000a    ('Garlic', 100),\000a    ('Basil', 120),\000a    ('Chicken Breast', 700),\000a    ('Lettuce', 200),\000a    ('Parmesan', 400)\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipes and capture IDs\000a    inserted_recipes AS (\000aINSERT INTO recipes (name) VALUES\000a    ('Spaghetti Pomodoro'),\000a    ('Chicken Caesar Salad')\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipe_ingredients using the returned IDs\000a    insert_recipe_ingredients AS (\000aINSERT INTO recipe_ingredients (recipe_id, product_id)\000aSELECT\000a    r.id AS recipe_id,\000a    p.id AS product_id\000aFROM\000a    inserted_recipes r\000a    JOIN inserted_products p\000aON\000a    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))\000a    OR\000a    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))\000a    )\000a\000a-- Insert carts with different total_in_cents values\000aINSERT INTO carts (total_in_cents) VALUES\000a    (0),\000a    (1070),\000a    (2150)"; expected "WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+-- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150) [42001-224]
+Location   : db/migration/V2__insert_data.sql (/Users/denizkilic/IdeaProjects/buy-recipes-app/build/resources/main/db/migration/V2__insert_data.sql)
+Line       : 2
+Statement  : -- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150)
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:267) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:374) ~[flyway-core-9.22.2.jar:na]
+	... 109 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Insert products and capture IDs\000aWITH inserted_products AS (\000a[*]INSERT INTO products (name, price_in_cents) VALUES\000a    ('Tomato', 150),\000a    ('Pasta', 300),\000a    ('Olive Oil', 500),\000a    ('Garlic', 100),\000a    ('Basil', 120),\000a    ('Chicken Breast', 700),\000a    ('Lettuce', 200),\000a    ('Parmesan', 400)\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipes and capture IDs\000a    inserted_recipes AS (\000aINSERT INTO recipes (name) VALUES\000a    ('Spaghetti Pomodoro'),\000a    ('Chicken Caesar Salad')\000a    RETURNING id, name\000a    ),\000a\000a-- Insert recipe_ingredients using the returned IDs\000a    insert_recipe_ingredients AS (\000aINSERT INTO recipe_ingredients (recipe_id, product_id)\000aSELECT\000a    r.id AS recipe_id,\000a    p.id AS product_id\000aFROM\000a    inserted_recipes r\000a    JOIN inserted_products p\000aON\000a    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))\000a    OR\000a    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))\000a    )\000a\000a-- Insert carts with different total_in_cents values\000aINSERT INTO carts (total_in_cents) VALUES\000a    (0),\000a    (1070),\000a    (2150)"; expected "WITH, (, SELECT, TABLE, VALUES"; SQL statement:
+-- Insert products and capture IDs
+WITH inserted_products AS (
+INSERT INTO products (name, price_in_cents) VALUES
+    ('Tomato', 150),
+    ('Pasta', 300),
+    ('Olive Oil', 500),
+    ('Garlic', 100),
+    ('Basil', 120),
+    ('Chicken Breast', 700),
+    ('Lettuce', 200),
+    ('Parmesan', 400)
+    RETURNING id, name
+    ),
+
+-- Insert recipes and capture IDs
+    inserted_recipes AS (
+INSERT INTO recipes (name) VALUES
+    ('Spaghetti Pomodoro'),
+    ('Chicken Caesar Salad')
+    RETURNING id, name
+    ),
+
+-- Insert recipe_ingredients using the returned IDs
+    insert_recipe_ingredients AS (
+INSERT INTO recipe_ingredients (recipe_id, product_id)
+SELECT
+    r.id AS recipe_id,
+    p.id AS product_id
+FROM
+    inserted_recipes r
+    JOIN inserted_products p
+ON
+    (r.name = 'Spaghetti Pomodoro' AND p.name IN ('Tomato', 'Pasta', 'Olive Oil', 'Garlic', 'Basil'))
+    OR
+    (r.name = 'Chicken Caesar Salad' AND p.name IN ('Chicken Breast', 'Lettuce', 'Garlic', 'Parmesan'))
+    )
+
+-- Insert carts with different total_in_cents values
+INSERT INTO carts (total_in_cents) VALUES
+    (0),
+    (1070),
+    (2150) [42001-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.ParserBase.getSyntaxError(ParserBase.java:750) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.ParserBase.read(ParserBase.java:357) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2712) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2564) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2529) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseQuery(Parser.java:2498) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseSingleCommonTableExpression(Parser.java:7066) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseWith1(Parser.java:6954) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseWith(Parser.java:6939) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parseWithStatementOrQuery(Parser.java:2507) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parsePrepared(Parser.java:631) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parse(Parser.java:592) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.parse(Parser.java:569) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Parser.prepareCommand(Parser.java:483) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231) ~[h2-2.2.224.jar:2.2.224]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95) ~[flyway-core-9.22.2.jar:na]
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210) ~[flyway-core-9.22.2.jar:na]
+	... 115 common frames omitted
+
+]]></system-out>
+  <system-err><![CDATA[
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+]]></system-err>
+</testsuite>

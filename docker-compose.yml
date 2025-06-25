@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15
+    platform: linux/amd64
+    container_name: buy-recipes-postgres
+    environment:
+      POSTGRES_DB: buy_recipes_db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U admin -d buy_recipes_db" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - buy-recipes-net
+
+  app:
+    container_name: buy-recipes-app
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/buy_recipes_db
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: admin
+    networks:
+      - buy-recipes-net
+
+volumes:
+  postgres_data:
+
+networks:
+  buy-recipes-net:
+    driver: bridge
